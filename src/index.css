@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Geist Mono Variable', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Light palette. Dark values are swapped in below. */
+  --color-bg: #ffffff;
+  --color-ink: #0a0a0a;
+  --color-muted: #737373;
+  --color-line: #e5e5e5;
+  --color-subtle: #fafafa;
+  --color-accent: #ea580c;
+}
+
+/* Dark palette: follows the system unless the user picked light, or forced via the toggle. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-bg: #1c1c1f;
+    --color-ink: #ededed;
+    --color-muted: #a1a1aa;
+    --color-line: #34343a;
+    --color-subtle: #232327;
+    --color-accent: #fb923c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --color-bg: #1c1c1f;
+  --color-ink: #ededed;
+  --color-muted: #a1a1aa;
+  --color-line: #34343a;
+  --color-subtle: #232327;
+  --color-accent: #fb923c;
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+  body {
+    @apply bg-bg font-sans text-ink antialiased;
+  }
+  ::selection {
+    @apply bg-accent text-bg;
+  }
+}
