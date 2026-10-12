@@ -2,13 +2,15 @@ import { useEffect, useState } from 'react'
 import { profile, links, now } from '../content.js'
 import { Button, Container } from './ui.jsx'
 
+function formatTime(timeZone) {
+  return new Intl.DateTimeFormat('en-GB', { timeZone, hour: '2-digit', minute: '2-digit' }).format(new Date())
+}
+
 function useLocalTime(timeZone) {
-  const format = () =>
-    new Intl.DateTimeFormat('en-GB', { timeZone, hour: '2-digit', minute: '2-digit' }).format(new Date())
-  const [time, setTime] = useState(format)
+  const [time, setTime] = useState(() => formatTime(timeZone))
 
   useEffect(() => {
-    const id = setInterval(() => setTime(format()), 15_000)
+    const id = setInterval(() => setTime(formatTime(timeZone)), 15_000)
     return () => clearInterval(id)
   }, [timeZone])
 

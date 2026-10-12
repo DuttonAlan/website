@@ -21,7 +21,9 @@ export default function ThemeToggle() {
     document.documentElement.dataset.theme = next
     try {
       localStorage.setItem('theme', next)
-    } catch {}
+    } catch {
+      // Storage can be blocked (e.g. private mode); the toggle still works for this visit.
+    }
     setTheme(next)
   }
 

@@ -9,7 +9,7 @@ export const profile = {
   timeZone: 'Europe/Berlin',
   github: 'DuttonAlan',
   intro:
-    "Software developer from Germany. I spend most of my days in C# and .NET, and my evenings building Authora, a self-hosted identity platform.",
+    'Software developer from Germany. I spend most of my days in C# and .NET, and my evenings building Authora, a self-hosted identity platform.',
 }
 
 // Add LinkedIn, X, etc. here — they show up in the hero and footer.

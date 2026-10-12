@@ -10,7 +10,12 @@ export default function Footer() {
         </p>
         <p className="mt-2 text-muted">
           Say hi on{' '}
-          <a href={links[0].href} target="_blank" rel="noopener noreferrer" className="text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-accent">
+          <a
+            href={links[0].href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-accent"
+          >
             {links[0].label}
           </a>
           .
