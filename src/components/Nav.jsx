@@ -16,7 +16,7 @@ export default function Nav() {
     <header className="sticky top-0 z-10 border-b border-line bg-bg/90 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
         <a href="#top" className="flex items-center gap-3 font-semibold tracking-tight">
-          <span className="grid size-8 place-items-center bg-ink font-mono text-xs text-bg">
+          <span className="grid size-8 place-items-center bg-ink font-mono text-base font-semibold tracking-tight text-bg">
             {profile.initials}
           </span>
           {profile.name}
