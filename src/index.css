@@ -10,7 +10,7 @@
   --color-muted: #737373;
   --color-line: #e5e5e5;
   --color-subtle: #fafafa;
-  --color-accent: #ea580c;
+  --color-accent: #6b7a2a;
 }
 
 /* Dark palette: follows the system unless the user picked light, or forced via the toggle. */
@@ -21,7 +21,7 @@
     --color-muted: #a1a1aa;
     --color-line: #34343a;
     --color-subtle: #232327;
-    --color-accent: #fb923c;
+    --color-accent: #a9b85a;
     color-scheme: dark;
   }
 }
@@ -31,7 +31,7 @@
   --color-muted: #a1a1aa;
   --color-line: #34343a;
   --color-subtle: #232327;
-  --color-accent: #fb923c;
+  --color-accent: #a9b85a;
   color-scheme: dark;
 }
 
