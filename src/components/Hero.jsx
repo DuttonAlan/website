@@ -35,7 +35,7 @@ export default function Hero() {
         </h1>
         <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted">{profile.intro}</p>
         <div className="mt-10 flex flex-wrap gap-3">
-          <Button href="#work">
+          <Button href="#projects">
             See what I'm building <span className="transition-transform group-hover:translate-x-0.5">→</span>
           </Button>
           {links.map((link) => (

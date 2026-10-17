@@ -2,9 +2,9 @@ import { projects } from '../content.js'
 import { useRepo, timeAgo } from '../lib/github.js'
 import { Section } from './ui.jsx'
 
-export default function Work() {
+export default function Projects() {
   return (
-    <Section id="work" index="02" label="Work" title="What I'm building.">
+    <Section id="projects" index="02" label="Projects" title="What I'm building.">
       <div className="grid gap-6">
         {projects.map((project, i) => (
           <Project key={project.title} project={project} index={i} />

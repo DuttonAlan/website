@@ -18,7 +18,7 @@ export const links = [{ label: 'GitHub', href: 'https://github.com/DuttonAlan' }
 // The "Now" strip under the hero.
 export const now = [
   { label: 'Working at', value: 'PlanB. GmbH' },
-  { label: 'Building', value: 'Authora', href: '#work' },
+  { label: 'Building', value: 'Authora', href: '#projects' },
   { label: 'Writing', value: 'Mostly C#' },
 ]
 
@@ -47,6 +47,22 @@ export const projects = [
     ],
     tags: ['C#', '.NET 10', 'ASP.NET Core', 'EF Core', 'PostgreSQL'],
     href: 'https://github.com/DuttonAlan/Authora',
+  },
+  {
+    title: 'PureMapper',
+    repo: 'DuttonAlan/PureMapper',
+    status: 'v1.0 on NuGet',
+    tagline: 'Map objects. Skip the boilerplate.',
+    description:
+      'A small, convention-based object-to-object mapper for .NET, in the spirit of AutoMapper. Zero configuration for the common cases, with startup validation that catches mistakes before they reach production.',
+    features: [
+      'Convention-based mapping & flattening',
+      'Fluent ForMember, profiles & ReverseMap',
+      'Startup configuration validation',
+      'Built-in dependency injection',
+    ],
+    tags: ['C#', '.NET 10', 'NuGet'],
+    href: 'https://github.com/DuttonAlan/PureMapper',
   },
 ]
 
