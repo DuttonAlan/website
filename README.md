@@ -19,7 +19,7 @@ npm run format    # format everything with Prettier
 
 All personal content (intro, tools, projects, experience and links) lives in [`src/content.js`](src/content.js). Edit that file and the whole site updates.
 
-The project card for Authora loads live stats and recent commits from the GitHub API in the browser. If the request fails, for example because of GitHub's rate limit, those parts are simply hidden.
+The project cards load live stats and recent commits from the GitHub API in the browser. If the request fails, for example because of GitHub's rate limit, those parts are simply hidden.
 
 ## Project structure
 

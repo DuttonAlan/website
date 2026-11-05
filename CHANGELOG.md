@@ -10,10 +10,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - PureMapper, a convention-based object mapper for .NET, in the Projects section.
+- Logbook, a self-hosted logging solution for .NET applications, in the Projects section.
 
 ### Changed
 
 - Renamed the Work section to Projects, since these are personal projects rather than day-job work. The anchor is now `#projects`.
+
+### Fixed
+
+- Long commit messages no longer widen the right column of a project card, so all cards keep the same proportions.
 
 ## [1.0.0] - 2026-10-12
 

@@ -18,8 +18,9 @@ function Project({ project, index }) {
   const repo = useRepo(project.repo)
 
   return (
-    // gap-px over a line-coloured background draws shared 1px borders
-    <article className="grid gap-px border border-line bg-line md:grid-cols-[3fr_2fr]">
+    // gap-px over a line-coloured background draws shared 1px borders.
+    // minmax(0, …) stops long commit messages from widening a column.
+    <article className="grid grid-cols-1 gap-px border border-line bg-line md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
       <a
         href={project.href}
         target="_blank"
