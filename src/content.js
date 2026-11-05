@@ -49,6 +49,22 @@ export const projects = [
     href: 'https://github.com/DuttonAlan/Authora',
   },
   {
+    title: 'Logbook',
+    repo: 'DuttonAlan/Logbook',
+    status: 'In progress',
+    tagline: 'Log. Search. Understand.',
+    description:
+      'A lightweight, self-hosted logging solution for .NET applications. A log API, a C# SDK that plugs into ILogger and a web interface to search your logs, without the weight of a full APM suite.',
+    features: [
+      'Batched, compressed log ingestion',
+      'Per-application API keys & rate limiting',
+      'Search by time, level, application & text',
+      'One container, one PostgreSQL database',
+    ],
+    tags: ['C#', '.NET 10', 'ASP.NET Core', 'React', 'PostgreSQL'],
+    href: 'https://github.com/DuttonAlan/Logbook',
+  },
+  {
     title: 'PureMapper',
     repo: 'DuttonAlan/PureMapper',
     status: 'v1.0 on NuGet',
