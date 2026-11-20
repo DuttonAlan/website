@@ -7,18 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
-
-- PureMapper, a convention-based object mapper for .NET, in the Projects section.
-- Logbook, a self-hosted logging solution for .NET applications, in the Projects section.
-
 ### Changed
 
-- Renamed the Work section to Projects, since these are personal projects rather than day-job work. The anchor is now `#projects`.
+- Redesigned the site as a single, minimal page: a short intro, links to Authora and Logbook, and a faint grid background.
+- Dark mode now always follows the system setting.
+- Restyled the favicon and 404 page to match.
 
-### Fixed
+### Removed
 
-- Long commit messages no longer widen the right column of a project card, so all cards keep the same proportions.
+- Navigation, About, Projects and Experience sections, and the live GitHub data.
+- The manual theme toggle.
+- Tailwind CSS and the Geist Mono font.
+- Link preview image, `robots.txt`, `sitemap.xml` and `CNAME` (the custom domain is set in the repository's Pages settings).
 
 ## [1.0.0] - 2026-10-12
 

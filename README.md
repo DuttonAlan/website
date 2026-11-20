@@ -1,6 +1,6 @@
 # alandutton.de
 
-My personal website, built with [Vite](https://vite.dev), [React](https://react.dev) and [Tailwind CSS](https://tailwindcss.com).
+My personal website, built with [Vite](https://vite.dev) and [React](https://react.dev).
 
 ## Getting started
 
@@ -17,18 +17,20 @@ npm run format    # format everything with Prettier
 
 ## Editing content
 
-All personal content (intro, tools, projects, experience and links) lives in [`src/content.js`](src/content.js). Edit that file and the whole site updates.
+All personal content (intro, projects and footer links) lives in [`src/content.js`](src/content.js). Edit that file and the whole site updates.
 
-The project cards load live stats and recent commits from the GitHub API in the browser. If the request fails, for example because of GitHub's rate limit, those parts are simply hidden.
+The site follows the system's light or dark setting automatically. Both palettes are CSS variables at the top of [`src/index.css`](src/index.css).
 
 ## Project structure
 
 ```
 src/
-├── content.js         # all personal content
-├── index.css          # Tailwind setup, colour tokens, light and dark palettes
-├── lib/github.js      # GitHub API hook and relative-time helper
-└── components/        # one component per section, plus shared UI in ui.jsx
+├── content.js   # all personal content
+├── App.jsx      # the page
+└── index.css    # colour tokens (light and dark) and all styles
+public/
+├── favicon.svg
+└── 404.html     # shown by GitHub Pages for unknown URLs
 ```
 
 ## License
