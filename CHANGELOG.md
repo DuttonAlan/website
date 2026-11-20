@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.1] - 2026-11-20
+
+### Changed
+
+- Changed favicon icon
+
 ## [2.0.0] - 2026-11-20
 
 ### Changed
@@ -39,6 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Pages deployment workflow for `alandutton.de`.
 - ESLint and Prettier setup.
 
-[Unreleased]: https://github.com/DuttonAlan/website/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/DuttonAlan/website/compare/v2.0.1...HEAD
+[2.0.0]: https://github.com/DuttonAlan/website/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/DuttonAlan/website/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/DuttonAlan/website/releases/tag/v1.0.0
